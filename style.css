@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Violet);
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+
+nav h1 {
+    color: white;
+    font-weight: 900;
+
+}
+
+nav h1 i {
+    color: var(--Soft-Magenta);
+    margin-left: 90px;
+    margin-right: 10px;
+
+}
+
+.contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 50px;
+    width: 1200px;
+    height: 450px;
+}
+
+.contact img {
+    height: 450px;
+
+}
+
+.contact h1 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 130px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.contact p {
+    font-size: 14px;
+    color: white;
+    padding-right: 100px;
+    line-height: 1.7;
+}
+
+button {
+    padding: 10px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 35px;
+    width: 200px;
+    color: var(--Violet);
+    border-color: transparent;
+    outline-color: transparent;
+    font-size: 18px;
+    transition: 0.4s;
+    box-shadow: 0px 5px 15px #2e2a2a;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--Soft-Magenta);
+        color: white;
+
+    }
+
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+}
+
+.social img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    transition: 0.4s;
+
+    &:hover {
+        scale: 1.4;
+    }
+}
+
+@media screen and (max-width:375px) {
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: var(--Violet);
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    nav {
+        font-family: 'Poppins', sans-serif;
+        margin-top: 30px;
+    }
+
+    nav h1 {
+        color: white;
+        font-weight: 900;
+
+    }
+
+    nav h1 i {
+        color: var(--Soft-Magenta);
+        margin-left: 30px;
+        margin-right: 10px;
+
+    }
+
+    .contact {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        column-gap: 50px;
+        width: 350px;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .contact img {
+        height: fit-content;
+        width: 325px;
+
+    }
+
+    .contact h1 {
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+        padding-right: 0px;
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+    }
+
+    .contact p {
+        font-size: 16px;
+        color: white;
+        padding: 0px 20px;
+        line-height: 1.7;
+    }
+
+    button {
+        padding: 10px;
+        margin-top: 30px;
+        background-color: white;
+        border-radius: 35px;
+        width: 200px;
+        color: var(--Violet);
+        border-color: transparent;
+        outline-color: transparent;
+        font-size: 18px;
+        transition: 0.4s;
+        box-shadow: 0px 5px 15px #2e2a2a;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--Soft-Magenta);
+            color: white;
+
+        }
+
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        transform: translate(-33%, -15%);
+        bottom: 0px;
+        right: 50px
+    }
+
+    .social img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 5px;
+        margin-bottom: 30px;
+        transition: 0.4s;
+
+        &:hover {
+            scale: 1.4;
+        }
+    }
+}
